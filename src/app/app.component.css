@@ -1,0 +1,55 @@
+.app__palette {
+  grid-area: palette
+}
+
+.app__simulator {
+  grid-area: simulator
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.form__component {
+  margin-bottom: 16px;
+}
+
+p,
+ul,
+li {
+  margin-bottom: 16px;
+}
+
+label,
+legend {
+  color: #555;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: capitalize;
+  display: block;
+}
+
+caption {
+  color: #555;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+input[type="text"],
+input[type="button"],
+textarea,
+select,
+input[type="datetime-local"] {
+  border: 1px solid #ccc;
+  min-height: 32px;
+  padding: 0 8px;
+  font-size: 16px;
+  min-height: 32px;
+  box-sizing: border-box;
+  border-radius: 0;
+}

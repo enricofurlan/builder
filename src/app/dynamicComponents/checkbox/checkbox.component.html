@@ -1,0 +1,14 @@
+<fieldset class="checkbox form__component" [myDraggable]="{data: 'checkbox'}" [ngClass]="{'checkbox--inline':inline}">
+  <legend class="checkbox__legend">Foo</legend>
+  <div *ngFor="let item of items; let i = index" class="checkbox__wrapper" [ngClass]="{'checkbox--checked':item.checked, 'checkbox--unchecked':!item.checked}"
+  >
+    <label [for]="item.id" class="checkbox__label" (click)="item.checked = !item.checked">{{item.label}} </label>
+    <input [id]="item.id" class="checkbox__input" type="checkbox" [value]="item.value"  [name]="item.name">
+  </div>
+
+  <pre *ngIf="debug">
+    {{items | json}}
+  </pre>
+
+
+</fieldset>

@@ -1,0 +1,17 @@
+.card{
+  background:white;
+  padding:5px;
+  box-shadow:1px 1px 2px #999;
+  margin-bottom:16px;
+}
+
+.card__header{
+  font-size:12px;
+  padding:16px 16px 0px 16px
+}
+.card__body{
+  font-size:10px;
+  padding:16px 16px 0px 16px
+}
+
+.card--collapsed .card__body{display: none}

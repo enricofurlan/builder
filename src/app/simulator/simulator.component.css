@@ -1,0 +1,54 @@
+.simulator{
+  display: grid;
+  padding-right:3px;
+
+  /*
+
+  the grid should be something like
+  header
+    logo menu buttonPane
+  content
+    12 cols
+  footer
+
+  */
+
+
+
+  grid-template-areas: "header"
+                       "content"
+                       "footer";
+
+}
+
+.simulator__header{
+  grid-area: header;
+  min-height: 96px;
+  background: rgba(241, 226, 142, 0.8);
+}
+
+
+
+.simulator__content{
+  grid-area: content;
+  background: rgba(142, 157, 241, 0.8);
+  min-height: 480px;
+}
+
+.simulator__footer{
+  grid-area: footer;
+  background: rgba(142, 241, 203, 0.8);
+  min-height: 96px;
+}
+
+
+
+.simulator__background{
+  height:100%;
+  overflow: auto;
+
+}
+
+.simulator__debugger{
+  outline:1px solid red;
+}

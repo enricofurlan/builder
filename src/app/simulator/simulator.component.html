@@ -1,0 +1,28 @@
+<div class="simulator">
+
+    <div class="simulator__header" [myDropTarget]="{gridArea:'header'}" (myDrop)="onDrop($event)" >
+      header
+    </div>
+    <div class="simulator__content" [myDropTarget]="{gridArea:'content'}" (myDrop)="onDrop($event)">
+      content
+    </div>
+    <div class="simulator__footer" [myDropTarget]="{gridArea:'footer'}" (myDrop)="onDrop($event)">
+      footer
+    </div>
+
+    <ng-template *ngFor="let c of ads" component-host>{{c | json}}</ng-template>
+
+  <!--<app-card class="" myDropTarget (myDrop)="onDrop($event)">
+
+    </app-card>-->
+</div>
+
+
+
+
+<!--<div *ngFor="let c of ads" component-host>{{c | json}}</div>-->
+
+<!--<pre class="simulator__debugger">
+  {{vdom | json}}
+</pre>-->
+

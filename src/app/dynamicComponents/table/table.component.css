@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  text-align: left;
+  background: white;
+  font-family: sans-serif;
+  font-size:12px;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  border:1px solid #ccc;
+}
+
+.table tr {}
+
+.table td {border-top: 1px solid #ccc; border-bottom:1px solid #ccd}
+
+.table th {}
+
+.table__caption {
+  text-align: left;
+}
+
+.table__header {}
+
+.table__body {}
+
+.table__footer {}
+
+
+.table--collapsed ~ .table__body,
+.table--collapsed ~ .table__header,
+.table--collapsed ~ .table__footer{display: none}

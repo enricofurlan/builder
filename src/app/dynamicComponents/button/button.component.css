@@ -1,0 +1,42 @@
+.button {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.button__input {
+  width: 100%;
+  background: rgb(83, 146, 204);
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  padding: 8px 8px 8px 8px;
+  line-height: 16px;
+  min-height: 32px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.button__input:focus,
+.button__input:active,
+.button__input:hover {
+  outline: none;
+  background: rgb(23, 75, 121);
+}
+
+.button--secondary .button__input {
+  background: white;
+  color: rgb(83, 146, 204);
+  border:1px solid rgb(83, 146, 204);
+  outline: none;
+}
+
+.button--secondary .button__input:focus,
+.button--secondary .button__input:active,
+.button--secondary .button__input:hover {
+  border:1px solid rgb(23, 75, 121);
+  outline: none;
+  background: white;
+  color: rgb(23, 75, 121);
+}
